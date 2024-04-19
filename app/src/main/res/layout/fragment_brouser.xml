@@ -6,9 +6,9 @@
     tools:context=".BrouserFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/brouser"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent"/>
 
 </FrameLayout>

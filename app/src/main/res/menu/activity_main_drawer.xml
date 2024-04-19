@@ -20,5 +20,9 @@
             android:id="@+id/nav_brouser"
             android:icon="@drawable/side_nav_bar"
             android:title="Brouser"/>
+        <item
+            android:id="@+id/nav_worker"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Worker" />
     </group>
 </menu>
