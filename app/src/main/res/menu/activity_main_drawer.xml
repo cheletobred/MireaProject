@@ -22,7 +22,11 @@
             android:title="Brouser"/>
         <item
             android:id="@+id/nav_worker"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_menu_gallery"
             android:title="Worker" />
+        <item
+            android:id="@+id/camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Camera" />
     </group>
 </menu>

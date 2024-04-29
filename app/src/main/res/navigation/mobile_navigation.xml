@@ -32,4 +32,9 @@
         android:name="ru.mirea.vorobevavi.mireaproject.nav_work"
         android:label="fragment_nav_work"
         tools:layout="@layout/fragment_nav_work" />
+    <fragment
+        android:id="@+id/camera"
+        android:name="ru.mirea.vorobevavi.mireaproject.Camera"
+        android:label="fragment_camera2"
+        tools:layout="@layout/fragment_camera2" />
 </navigation>
