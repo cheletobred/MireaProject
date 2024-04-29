@@ -37,4 +37,14 @@
         android:name="ru.mirea.vorobevavi.mireaproject.Camera"
         android:label="fragment_camera2"
         tools:layout="@layout/fragment_camera2" />
+    <fragment
+        android:id="@+id/sensored"
+        android:name="ru.mirea.vorobevavi.mireaproject.Sensored"
+        android:label="fragment_sensor"
+        tools:layout="@layout/fragment_sensor" />
+    <fragment
+        android:id="@+id/recorder"
+        android:name="ru.mirea.vorobevavi.mireaproject.Recorder"
+        android:label="fragment_recorder"
+        tools:layout="@layout/fragment_recorder" />
 </navigation>

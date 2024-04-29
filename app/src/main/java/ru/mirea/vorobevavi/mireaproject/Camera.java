@@ -29,7 +29,6 @@ import ru.mirea.vorobevavi.mireaproject.databinding.FragmentCamera2Binding;
 public class Camera extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
@@ -38,7 +37,6 @@ public class Camera extends Fragment {
     private String mParam2;
 
     public Camera() {
-        // Required empty public constructor
     }
 
     /**
@@ -73,28 +71,6 @@ public class Camera extends Fragment {
         }
     }
 
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//                             Bundle savedInstanceState) {
-//        binding = FragmentCamera2Binding.inflate(inflater, container, false);
-//        final View rootView = inflater.inflate(R.layout.fragment_camera2, container, false);;
-//        int audioRecordPermissionStatus = ContextCompat.checkSelfPermission(getActivity(),
-//                Manifest.permission.CAMERA);
-//        if (audioRecordPermissionStatus == PackageManager.PERMISSION_GRANTED ) {
-//            isWork = true;
-//        } else {
-//            // Выполняется запрос к пользователь на получение необходимых разрешений
-//            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.CAMERA}, REQUEST_CODE_PERMISSION);
-//        }
-//        binding.btnCapturePicture.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-//                ...(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
-//            }
-//        });
-//        return binding.getRoot();
-//    }
 @Override
 public View onCreateView(LayoutInflater inflater, ViewGroup container,
                          Bundle savedInstanceState) {
@@ -116,13 +92,13 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
                     Intent data = result.getData();
                     if (data != null) {
                         Bitmap bmp = (Bitmap) data.getExtras().get("data");
-                        binding.imageView3.setImageBitmap(bmp);
+                        binding.avatar.setImageBitmap(bmp);
                     }
                 }
             }
     );
 
-    binding.btnCapturePicture.setOnClickListener(view -> {
+    binding.addPhoto.setOnClickListener(view -> {
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         cameraLauncher.launch(intent);
     });
@@ -140,7 +116,7 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
                     bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
                     byte[] byteArray = stream.toByteArray();
                     Bitmap bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
-                    binding.imageView3.setImageBitmap(bitmap);
+                    binding.avatar.setImageBitmap(bitmap);
                 }
             }
         }

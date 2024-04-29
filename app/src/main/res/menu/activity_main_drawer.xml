@@ -28,5 +28,13 @@
             android:id="@+id/camera"
             android:icon="@drawable/ic_menu_camera"
             android:title="Camera" />
+        <item
+            android:id="@+id/sensored"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Sensored" />
+        <item
+            android:id="@+id/recorder"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Recorder" />
     </group>
 </menu>
