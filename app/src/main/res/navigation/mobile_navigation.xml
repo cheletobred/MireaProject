@@ -47,4 +47,14 @@
         android:name="ru.mirea.vorobevavi.mireaproject.Recorder"
         android:label="fragment_recorder"
         tools:layout="@layout/fragment_recorder" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="ru.mirea.vorobevavi.mireaproject.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/workWithFile"
+        android:name="ru.mirea.vorobevavi.mireaproject.WorkWithFile"
+        android:label="fragment_work_with_file"
+        tools:layout="@layout/fragment_work_with_file" />
 </navigation>

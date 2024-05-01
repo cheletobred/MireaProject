@@ -36,5 +36,13 @@
             android:id="@+id/recorder"
             android:icon="@drawable/ic_menu_camera"
             android:title="Recorder" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Profile" />
+        <item
+            android:id="@+id/workWithFile"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="FileWorker" />
     </group>
 </menu>
