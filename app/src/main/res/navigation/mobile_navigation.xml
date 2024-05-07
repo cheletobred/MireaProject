@@ -57,4 +57,9 @@
         android:name="ru.mirea.vorobevavi.mireaproject.WorkWithFile"
         android:label="fragment_work_with_file"
         tools:layout="@layout/fragment_work_with_file" />
+    <fragment
+        android:id="@+id/weather2"
+        android:name="ru.mirea.vorobevavi.mireaproject.Weather"
+        android:label="fragment_weather"
+        tools:layout="@layout/fragment_weather" />
 </navigation>

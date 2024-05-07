@@ -44,5 +44,9 @@
             android:id="@+id/workWithFile"
             android:icon="@drawable/ic_menu_camera"
             android:title="FileWorker" />
+        <item
+            android:id="@+id/weather2"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Weather" />
     </group>
 </menu>
