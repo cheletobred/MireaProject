@@ -50,8 +50,8 @@ public class DownloadWeather extends AsyncTask<String, Void, String> {
             JSONObject responseJson = new JSONObject(result);
             Log.d(MainActivity.class.getSimpleName(), "Response: " + responseJson);
             JSONObject currentWeather = responseJson.getJSONObject("current_weather");
-            temperature.setText("temperature: " + currentWeather.getString("temperature"));
-            time.setText("time: " + currentWeather.getString("time"));
+            temperature.setText("Температура: " + currentWeather.getString("temperature"));
+            time.setText("Время: " + currentWeather.getString("time"));
 
             if(currentWeather.getString("is_day")=="1"){
                 day.setText("День");
@@ -78,7 +78,7 @@ public class DownloadWeather extends AsyncTask<String, Void, String> {
             connection.setUseCaches(false);
             connection.setDoInput(true);
             int responseCode = connection.getResponseCode();
-            if (responseCode == HttpURLConnection.HTTP_OK) { // 200 OK
+            if (responseCode == HttpURLConnection.HTTP_OK) {
                 inputStream = connection.getInputStream();
                 ByteArrayOutputStream bos = new ByteArrayOutputStream();
                 int read = 0;

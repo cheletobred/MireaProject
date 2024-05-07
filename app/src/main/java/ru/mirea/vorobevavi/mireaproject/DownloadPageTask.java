@@ -13,9 +13,6 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import ru.mirea.vorobevavi.mireaproject.MainActivity;
-import ru.mirea.vorobevavi.mireaproject.R;
-
 public class DownloadPageTask extends AsyncTask<String, Void, String> {
     TextView weather;
     TextView city;
@@ -24,7 +21,6 @@ public class DownloadPageTask extends AsyncTask<String, Void, String> {
     TextView timezone;
     View view;
 
-    //https://api.open-meteo.com/v1/forecast?latitude=55.75&longitude=37.62&current_weather=true
     public DownloadPageTask(View view) {
         this.view=view;
 
@@ -32,7 +28,7 @@ public class DownloadPageTask extends AsyncTask<String, Void, String> {
         this.city=view.findViewById(R.id.city);
         this.region=view.findViewById(R.id.region);
         this.country=view.findViewById(R.id.country);
-        this.timezone=view.findViewById(R.id.timezone);// сохраняем ссылку на binding
+        this.timezone=view.findViewById(R.id.timezone);
     }
     @Override
     protected void onPreExecute() {
@@ -82,7 +78,7 @@ public class DownloadPageTask extends AsyncTask<String, Void, String> {
             connection.setUseCaches(false);
             connection.setDoInput(true);
             int responseCode = connection.getResponseCode();
-            if (responseCode == HttpURLConnection.HTTP_OK) { // 200 OK
+            if (responseCode == HttpURLConnection.HTTP_OK) {
                 inputStream = connection.getInputStream();
                 ByteArrayOutputStream bos = new ByteArrayOutputStream();
                 int read = 0;
