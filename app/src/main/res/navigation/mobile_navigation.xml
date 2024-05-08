@@ -62,4 +62,9 @@
         android:name="ru.mirea.vorobevavi.mireaproject.Weather"
         android:label="fragment_weather"
         tools:layout="@layout/fragment_weather" />
+    <fragment
+        android:id="@+id/maps3"
+        android:name="ru.mirea.vorobevavi.mireaproject.Maps"
+        android:label="fragment_maps.xml"
+        tools:layout="@layout/fragment_maps" />
 </navigation>

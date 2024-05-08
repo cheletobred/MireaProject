@@ -46,7 +46,11 @@
             android:title="FileWorker" />
         <item
             android:id="@+id/weather2"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_menu_compass"
             android:title="Weather" />
+        <item
+            android:id="@+id/maps3"
+            android:icon="@drawable/osm_ic_center_map"
+            android:title="Maps" />
     </group>
 </menu>
